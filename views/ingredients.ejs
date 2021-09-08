@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="https://use.typekit.net/zwn4ylb.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/responsiveMobileProducts.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body>
+    <div class="product-page">
+      <header>
+        <%- include("partials/navbar") %>
+        <!-- Product Page -->
+        <div class="product-header">
+          <div class="container flex">
+            <div class="w-60 flex flex-column justify-content-center">
+              <h1>Perfect Blend of <br />Nature & Modernity.</h1>
+              <p class="w-40 my-2">
+                Our ingredients are made innovatively from upcycled & natural
+                raw materials by using Biochemistry, Green Chemistry and
+                Biotechnology based concepts & methodologies.
+              </p>
+              <a href="/ingredients" class="my-btn2 w-30">Explore our Range</a>
+            </div>
+            <div class="w-40">
+              <img src="/images/products-header.jpg" class="w-80 p-2" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Products section -->
+      <section class="products">
+        <div class="container p-2">
+          <div class="top">
+            <h1>
+              Straight from the<span class="line">
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</span
+              >
+              Heart of Nature
+            </h1>
+            <p class="my-1">Our Bestsellers Products.</p>
+          </div>
+          <h2 class="my-2">Oils</h2>
+          <div class="wrapper center">
+            <div class="carousel owl-carousel">
+              <% for(let x of Oils){ %>
+              <div class="product oils">
+                <img src="<%= x.src %>" alt="" />
+                <a href="/ingredients/oils/<%= x.id %>">
+                  <p class="p-1"><%= x.type %></p>
+                </a>
+              </div>
+              <% } %>
+            </div>
+          </div>
+
+          <h2 class="my-2">Scrubs (Exfoliators)</h2>
+          <div class="wrapper center">
+            <div class="carousel owl-carousel">
+              <% for(let x of Scrubs){ %>
+              <div class="product oils">
+                <img src="<%= x.src %>" alt="" />
+                <a href="/ingredients/scrubs/<%= x.id %>">
+                  <p class="p-1"><%= x.type %></p>
+                </a>
+              </div>
+              <% } %>
+            </div>
+          </div>
+
+          <div style="margin-top: 70px">
+            <a href="/contact" class="my-btn3">Get A Quote</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Essential -->
+      <section class="essential">
+        <img clas="top" src="/images/natrual-a.svg" alt="" />
+        <div class="container">
+          <div class="flex top">
+            <div class="left w-50">
+              <h1>
+                Skincare <br />
+                Essentials for <br />Each Skin Type.
+              </h1>
+              <p class="w-50 my-2">
+                Different types of skin require nurturing in a unique way. Our
+                product range includes essential skincare ingredients that can
+                be beneficial for various skin types.
+              </p>
+              <p><a href="index.html"> Learn the process</a></p>
+            </div>
+            <div class="w-50 right p-2">
+              <img class="w-70" src="/images/products-essential-a.png" alt="" />
+            </div>
+          </div>
+          <div class="flex bottom">
+            <div class="vision">
+              <img src="/images/essential-a.png" alt="" />
+              <p>
+                With a global vision to produce scientifically proven raw
+                materials for various industries. We understand the process of
+                exploring natural ingredients with modern science.
+              </p>
+              <br />
+
+              <p>
+                We make products that can add value to our entire ecosystem. Our
+                products are created from specialized development and production
+                of ingredients where we only use local indigenous plant based
+                raw materials.
+              </p>
+            </div>
+            <div class="w-50 left p-2">
+              <img class="w-70" src="/images/products-essential-b.png" alt="" />
+            </div>
+            <div class="w-50 mx-ne-2 right">
+              <h1>Natrual <br />Ingredients</h1>
+              <h3>Born out of Rich Biodiversity.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <%- include("partials/footer") %>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script>
+      $(".carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+            margin: 20,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: false,
+            margin: 60,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/zwn4ylb.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/responsiveMobileContatc.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body>
+    <div class="contact-page">
+      <header>
+        <%- include("partials/navbar") %>
+        <!-- Contact Page -->
+        <div class="contact">
+          <div class="container flex">
+            <div class="w-60 flex justify-content-center left">
+              <h1>Contact Us</h1>
+              <p style="margin: 10px 0 40px 0">
+                Our team will be glad to hear from you & answer any of your
+                questions. <br />Get in touch today!
+              </p>
+              <form method="POST">
+                <input type="text" name="" placeholder="Name" id="" />
+                <input type="text" name="" placeholder="Phone number" id="" />
+                <input type="email" name="" placeholder="Email Address" id="" />
+                <input type="text" name="" placeholder="Message" id="" />
+                <button class="my-btn3">Submit</button>
+              </form>
+              <div class="flex bottom">
+                <div class="w-50">
+                  <h4>Visit us at:</h4>
+                  <p>
+                    Aman Nagar, 3583, Jyoti Colony,<br />
+                    Jamalpur Awana, Ludhiana, <br />Punjab, 141010
+                  </p>
+                </div>
+                <div class="w-50">
+                  <h4>Reach Out:</h4>
+                  <p>trishvedanaturals@gmail.com</p>
+                  <p>9041060304</p>
+                  <!-- <p>9998887776</p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-40 right flex align-items-center justify-content-center"
+            >
+              <img src="/images/contact-header.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <%- include("partials/footer") %>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

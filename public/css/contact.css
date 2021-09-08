@@ -1,0 +1,65 @@
+.contact {
+  background-color: #478d81;
+  color: #fff;
+  height: 100%;
+  padding: 25px;
+}
+.contact p,
+.contact h4 {
+  font-family: "navigo";
+}
+.contact p {
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+.contact .container .left {
+  flex-direction: column;
+}
+.contact .container {
+  height: 100%;
+}
+
+.contact .right img {
+  width: 85%;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+/* Form */
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.contact .left form input {
+  padding: 10px 0px;
+  margin-bottom: 40px;
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(245, 244, 240, 0.4);
+  font-size: 25px;
+}
+::placeholder {
+  color: rgba(246, 245, 241, 0.8);
+}
+.contact .left button {
+  width: 150px;
+}
+
+.contact .left .bottom {
+  margin: 30px 0;
+}
+.contact-page footer {
+  background: url("../images/contact-footer-bg.png");
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .contact .right img {
+    width: 100%;
+  }
+}

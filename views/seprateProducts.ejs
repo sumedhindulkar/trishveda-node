@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="https://use.typekit.net/zwn4ylb.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/responsiveMobileProducts.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../../../images/favicon.png" />
+  </head>
+  <body>
+    <div class="product-page">
+      <header>
+  <!-- NAVBAR -->
+ <%- include("partials/navbar") %>
+</div>
+
+        <!-- Product Page -->
+        <div class="product-header">
+          <div class="container flex">
+            <div class="w-60 flex flex-column justify-content-center">
+              <h1><%= Product[id].type %></h1>
+              <p class="w-60 my-2">
+                <%= Product[id].desc %>
+              </p>
+              <a href="/ingredients" class="my-btn2 w-30">Explore our Range</a>
+            </div>
+            <div class="w-40">
+              <img src="/<%= Product[id].src %>" class="w-80 p-2" style="height: 500px;" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Products section -->
+      <section class="products">
+        <div class="container">
+          <div class="top">
+            <h1 class="my-2">
+              People also viewed
+            </h1>
+          </div>
+          <div class="wrapper center">
+            <div class="carousel owl-carousel">
+              <% for(let x of Product){ %>
+                <% if(x.id != Product[id].id) {%>
+              <div class="product oils">
+                <img src="/<%= x.src %>" alt="" />
+                <a href="/ingredients/<%= productType %>/<%= x.id %>" >
+                  <p class="p-1"><%= x.type %></p>
+                </a>
+              </div>
+              <% } %>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+  
+      <!-- Footer -->
+      <%- include("partials/footer") %>
+
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script>
+      $(".carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+            margin: 20,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+            loop: false,
+            margin: 60,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

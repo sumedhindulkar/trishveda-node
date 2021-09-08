@@ -1,0 +1,122 @@
+@media (max-width: 480px) {
+  /* sustainability */
+  .sustainability .essential .container .bottom {
+    flex-direction: column;
+  }
+  .sustainability .essential .container .top {
+    flex-direction: column-reverse;
+  }
+  .sustainability .essential .container .bottom .left {
+    margin-bottom: 60px;
+  }
+  .sustainability .product-header .container img {
+    border-radius: 0 !important;
+    margin-bottom: 60px;
+  }
+  .sustainable-bg-img {
+    background-size: 400% 100%;
+    background-position: 45% 2%;
+    background-repeat: no-repeat;
+  }
+  /* product */
+  .line {
+    display: none;
+  }
+  .products .container {
+    padding: 0 30px;
+  }
+  .product-header {
+    height: 100%;
+  }
+  .product-header > .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .product-header .container img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .product-header .container .w-40 img {
+    width: 100%;
+    padding: 0;
+  }
+  .product-header p {
+    line-height: 1.6;
+  }
+  .product-header button {
+    width: 60%;
+  }
+  /* Products */
+  .products {
+    margin-top: 100px;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  /* essential */
+  .essential {
+    overflow: hidden;
+  }
+
+  .essential .container .top {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .essential .container .top .right {
+    padding: 0;
+    margin: 60px auto;
+  }
+  .essential .top img,
+  .essential .bottom .left img {
+    width: 100%;
+    border-radius: 0 !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .essential .bottom .left {
+    padding: 0;
+  }
+  .essential .container .bottom {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .essential .container .bottom .right h3 {
+    font-size: 24px;
+    text-align: right;
+    margin: 8px auto;
+  }
+  .essential .container .bottom .right {
+    margin: 0;
+  }
+  .essential .container .bottom .vision {
+    position: relative;
+    padding: 60px 25px;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    height: 530px;
+    line-height: 2;
+    margin: 160px auto 30px auto;
+  }
+  .essential .container .bottom .vision img {
+    right: 0;
+  }
+  /* owl carousel */
+
+  .owl-dots {
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 80% !important;
+    position: relative !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+  }
+  .owl-nav button {
+    display: none !important;
+  }
+
+  .product-page .owl-carousel button.owl-dot {
+    padding: 8px !important;
+    background-color: #f5f4f0 !important;
+    border-radius: 50% !important;
+  }
+}

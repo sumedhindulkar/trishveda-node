@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrishVeda</title>
+    <!-- Link to font -->
+    <link rel="stylesheet" href="https://use.typekit.net/zwn4ylb.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/responsiveMobileHome.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body>
+    <div class="home">
+      <header>
+        <%- include("partials/navbar") %>
+        <!-- MAIN SECTION -->
+        <div class="main-section">
+          <div class="container flex align-items-center">
+            <div class="w-60 left">
+              <div>
+                <p>DISCOVERING A NEW GENERATION OF</p>
+                <h1>Science-driven</h1>
+              </div>
+              <div class="flex">
+                <div class="w-50">
+                  <img src="/images/header-a.jpg" alt="" />
+                </div>
+                <div class="w-50">
+                  <h1 class="mx-ne">Raw</h1>
+                  <h1>Materials</h1>
+                  <p class="my-2 w-90">
+                    With the help of modern science, we make high-quality raw
+                    materials for the cosmetics and nutraceuticals industry.
+                  </p>
+
+                  <a href="/ingredients" class="my-btn">Explore our Range</a>
+                </div>
+              </div>
+            </div>
+            <div class="w-40 right">
+              <img src="/images/header-b.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Safety Section -->
+      <section class="safety">
+        <div class="container">
+          <div>
+            <h1 class="w-40">
+              <sup>01</sup>Never have to worry about the safety or quality
+            </h1>
+          </div>
+          <div class="left w-40">
+            <img src="/images/safety-a.png" alt="" />
+            <br />
+            <p class="w-80" style="padding: 20px 30px 0 30px">
+              Our ingredients are made out of raw materials that are rich in
+              nutrients and vitamins. Without any use of harsh petrochemicals,
+              we follow optimized processes to prepare those ingredients.
+            </p>
+            <br />
+            <p class="w-80" style="padding: 20px 30px">
+              While contributing towards Eco-System, we are taking advantage of
+              new innovations and functions to prepare high-value added natural
+              ingredients.
+            </p>
+            <br />
+          </div>
+          <div class="right">
+            <img src="/images/safety-b.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Natrual Ing. -->
+      <div class="natrual">
+        <img clas="top" src="/images/natrual-a.png" alt="" />
+        <div class="container flex align-items-center">
+          <h1 class="w-80">
+            <sup>02</sup>
+            Initiating an Approach to Prepare Robust Ingredients with
+            Sustainable Development!
+          </h1>
+          <div class="w-80 bottom">
+            <div class="natrual-top">
+              <img
+                class="natrual-top-img"
+                src="/images/natrual-b.jpg"
+                alt=""
+              />
+            </div>
+            <div class="natrual-items">
+              <div>
+                <img
+                  class="natrual-icons"
+                  src="/images/icon-1.png"
+                  style="width: 20%"
+                  alt=""
+                />
+                <p>
+                  Formulated with organic & upcycled ingredients that provides
+                  scientifically proven benefits.
+                </p>
+              </div>
+              <div>
+                <img class="natrual-icons" src="/images/icon-2.png" alt="" />
+                <p>
+                  Certified with Eco-certification, we follow predefined
+                  processes from sourcing to processing.
+                </p>
+              </div>
+              <div>
+                <img class="natrual-icons" src="/images/icon-3.png" alt="" />
+                <p>
+                  Products are packed & shipped in plastic-free & biodegradable
+                  sourced materials.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Explore Section -->
+      <section class="explore mt-max">
+        <div class="container flex justify-content-center">
+          <h3 class="w-90">
+            Trishveda never compromises with the standards. Each one of our
+            ingredients is perfectly
+            <sup> &ThinSpace; 1 </sup> made out of the best quality raw
+            <sup> &ThinSpace;2</sup> materials to achieve sustainability. It
+            reaches you after being rigorously tested by our community of
+            devoted humans.
+            <br class="display-none" />
+            <button
+              onclick="location.href = '/ingredients';"
+              class="my-btn2"
+              style="cursor: pointer"
+            >
+              Explore our Range
+            </button>
+          </h3>
+        </div>
+        <img class="mt-max" src="/images//explore-a.png" alt="" />
+      </section>
+      <%- include("partials/footer") %>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

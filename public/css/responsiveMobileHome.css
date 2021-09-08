@@ -1,0 +1,117 @@
+@media (max-width: 480px) {
+  /* Head */
+  header {
+    overflow-x: hidden;
+  }
+
+  .main-section {
+    height: 100%;
+    margin-top: 0;
+  }
+  .main-section .container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .main-section .right img {
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .main-section .left {
+    margin-top: -30px;
+  }
+  .main-section .left > div p:first-child {
+    color: #fff;
+    opacity: 0.8;
+    margin-right: 40px;
+  }
+  .main-section .w-60 .flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .main-section .w-60 .flex img {
+    width: 160px;
+    height: 240px;
+    position: relative;
+    left: 200px;
+    top: -120px;
+    z-index: -1;
+  }
+  .main-section .w-50 .w-70 {
+    width: 70%;
+  }
+  /* Safety */
+  .safety {
+    position: relative;
+    margin-top: 400px;
+  }
+  .safety h1 {
+    padding-top: 60px;
+  }
+  .safety .left {
+    position: relative;
+    padding: 30px 0 60px 0;
+    border-bottom-left-radius: 170px;
+    line-height: 2;
+    left: 0;
+    transform: translate(0);
+    margin: 80px 0 100px 0;
+  }
+  .safety .left img {
+    z-index: -1;
+  }
+  .safety .left br {
+    display: none;
+  }
+  .safety .left p {
+    padding-top: 60px !important;
+  }
+  .safety .right img {
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: -4;
+    border-radius: 0;
+  }
+  /* Natrual */
+  .natrual {
+    overflow-x: hidden;
+  }
+  .natrual h1 {
+    margin-top: 70px;
+  }
+  .natrual-top {
+    margin: -20px;
+  }
+  .natrual-top-img {
+    border-radius: 0;
+  }
+  .natrual-items {
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  .natrual-items > div {
+    min-width: 90%;
+  }
+  .natrual-items div:first-child {
+    border-radius: 0;
+  }
+  .natrual-items div:nth-child(2n) {
+    padding: 0;
+  }
+  .natrual-items div:last-child {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  /* Explore */
+  .explore {
+    overflow-x: hidden;
+  }
+  .explore img {
+    width: 150%;
+    margin: 70px auto;
+  }
+}

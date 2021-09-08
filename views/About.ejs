@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/zwn4ylb.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/responsiveMobileAbout.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body>
+    <div class="about-page">
+      <header>
+        <%- include("partials/navbar") %>
+        <!-- About Page -->
+        <div class="about">
+          <div class="container flex">
+            <div class="w-60 flex flex-column justify-content-center left">
+              <h1>
+                Serving Mother Earth <br />with Eco-Friendly <br />Production.
+              </h1>
+              <p class="my-2 w-50">
+                Our philosophy is to serve mother earth with prosperity &
+                abundance while developing natural ingredients with innovative
+                techniques.
+              </p>
+              <a href="/ingredients" class="w-30 my-btn3">Explore Our Range</a>
+            </div>
+            <div
+              class="
+                w-40
+                p-4
+                right
+                flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <img class="w-100" src="/images/about-header.png" alt="" />
+            </div>
+          </div>
+          <!-- <div class="tag display-none">
+            <p>TrishvedaAdvantage <span>♦</span> TrishvedaAdvantage</p>
+          </div> -->
+        </div>
+      </header>
+
+      <!-- Who are we section -->
+      <img class="about-bg w-100" src="/images/about-a.png" alt="" />
+      <section class="whoami">
+        <img clas="top " src="/images/natrual-a.svg" alt="" />
+        <div class="container py-2">
+          <div class="flex">
+            <h1>What are we?</h1>
+            <img class="flower w-10 mx-2" src="/images/flower.png" alt="" />
+          </div>
+          <hr />
+          <div class="flex">
+            <div>
+              <sup>01</sup>
+            </div>
+
+            <h3>
+              Trishveda Naturals' has a unique development and production
+              program to create industry solutions.
+            </h3>
+          </div>
+          <hr />
+          <div class="flex">
+            <div>
+              <sup>02</sup>
+            </div>
+
+            <h3>
+              We develop raw materials for Personal Care, Food, Pharmaceutical
+              and Nutraceutical Industries.
+            </h3>
+          </div>
+
+          <div class="flex point-3">
+            <div class="w-70">
+              <hr />
+              <div class="flex">
+                <div>
+                  <sup>03</sup>
+                </div>
+
+                <h3>
+                  Our aim is to create high quality but niche ingredients that
+                  can allow businesses to create extraordinary products.
+                </h3>
+              </div>
+              <hr />
+              <div class="flex">
+                <div>
+                  <sup>04</sup>
+                </div>
+
+                <h3>
+                  We constantly strive to use organic & natural ingredients
+                  while respecting mother nature.
+                </h3>
+              </div>
+              <hr />
+            </div>
+            <div class="w-30">
+              <video loop autoplay muted>
+                <source src="/images/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div>
+              <sup>05</sup>
+            </div>
+
+            <h3>
+              Our contribution towards the circular economy doesn't go
+              unnoticed. We will create a strong presence in the global market
+              for our Company & Country.
+            </h3>
+          </div>
+          <hr />
+          <div class="flex">
+            <div>
+              <sup>06</sup>
+            </div>
+
+            <h3>
+              Through our processes, we try to attain net-zero carbon emissions.
+              All the raw materials are organic certified to promote sustainable
+              development.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey -->
+      <section class="journey">
+        <div class="tag">
+          <p>
+            Trishveda Journey <span>&diams;</span> Trishveda Journey
+            <span>&diams;</span> Trishveda Journey
+            <span>&diams;</span> Trishveda Journey
+            <span>&diams;</span> Trishveda Journey
+          </p>
+        </div>
+        <img class="journey-img-a" src="/images/about-journey-a.png" alt="" />
+        <img class="journey-img-b" src="/images/about-journey-b.png" alt="" />
+        <h1>
+          How we<br />
+          came to be ?
+        </h1>
+        <p class="w-30 my-2">
+          Trishveda Naturals, a young Life Sciences based company, collaborated
+          with scientists & universities across the globe to develop processes
+          for creating high-quality natural products.
+        </p>
+        <a href="/ingredients" class="my-btn3 s">Explore our Range</a>
+      </section>
+      <!-- Footer -->
+      <%- include("partials/footer") %>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

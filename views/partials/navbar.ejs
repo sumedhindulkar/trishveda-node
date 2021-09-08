@@ -1,0 +1,48 @@
+<div class="navbar">
+  <!-- NAVBAR -->
+ 
+  <div class="nav container w-100">
+    <div class="nav-logo w-50">
+      <a href="/">
+        <img src="/images/logo.png" style="width: 120px" alt="" />
+      </a>
+    </div>
+    <div class="w-50 nav-items-tab" style="align-self: center">
+      <ul class="nav-items">
+        <li>
+          <a href="/" class="nav-link <%= navBar === "home" ? "nav-active": " " %>">Home</a>
+        </li>
+        <li>
+          <a href="/about" class="nav-link <%= navBar === "about" ? "nav-active": " " %>">About</a>
+        </li>
+        <li>
+          <a href="/ingredients" style="padding: 28px" class="nav-link <%= navBar === "ingredients" ? "nav-active": " " %>"
+            >Ingredients</a
+          >
+        </li>
+        <li>
+          <a href="/sustainability" style="padding: 34px" class="nav-link <%= navBar === "sustainability" ? "nav-active": " " %>"
+            >Sustainability</a
+          >
+        </li>
+        <li>
+          <a href="/contact" class="nav-link <%= navBar === "contact" ? "nav-active": " " %>">Contact</a>
+        </li>
+        <li class="my-3 socials">
+          <p style="text-align: center">SOCIALS</p>
+          <br />
+          <a href="https://www.instagram.com/dermasist/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.linkedin.com/company/nano-tech-chemical-brothers/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+      <img class="menu display-none" src="/images/hamburger.png" alt="" />
+    </div>
+  </div>
+</div>
